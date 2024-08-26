@@ -1,0 +1,21 @@
+{
+  "name": "leasebridge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "install": "cd server NODE_ENV=development && npm i && cd ../client NODE_ENV=development && npm i",
+    "build": "cd client && npm run build",
+    "render-build": "npm install && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "node": "^22.7.0"
+  }
+}
