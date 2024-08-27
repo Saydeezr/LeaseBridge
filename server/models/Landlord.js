@@ -2,6 +2,8 @@ const { Schema, model } = require('mongoose');
 
 const landlordSchema = new Schema(
     {
+        first_name: String,
+        last_name: String,
         email: {
             type: String,
             required: true,
@@ -11,7 +13,8 @@ const landlordSchema = new Schema(
         password: {
             type: String,
             required: true,
-        }
+        },
+        tenants: [{ type: Schema.Types.ObjectId, ref: 'tenant' }]
     },
 
     {
