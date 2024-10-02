@@ -1,5 +1,5 @@
-const router = express.Router();
-const { Landlord } = require('../../models/Landlord ')
+const router = require('express').Router();
+const { Landlord } = require('../../models')
 
 //get all landlords
 router.get('/', async (req,res) => {
@@ -61,4 +61,6 @@ router.delete('/:id', async (req,res) => {
         console.log(error);
         return res.status(500).json(error);
     }
-})
+});
+
+module.exports = router;

@@ -10,6 +10,14 @@ const landlordSchema = new Schema(
             unique: true,
             match: [/.+@.+\..+/, 'Must use a valid email address']
         },
+        city: { 
+            type: String,
+            required: true
+        },
+        state: {
+            type: String,
+            required:true
+        },
         password: {
             type: String,
             required: true,
@@ -23,6 +31,9 @@ const landlordSchema = new Schema(
         },
     }
 );
+
+//hash password
+
 
 const Landlord = model('landlord', landlordSchema);
 

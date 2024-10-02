@@ -10,6 +10,14 @@ const tenantSchema = new Schema(
             unique: true,
             match: [/.+@.+\..+/, 'Must use a valid email address'],
         },
+        city: { 
+            type: String,
+            required: true
+        },
+        state: {
+            type: String,
+            required:true
+        },
         password: {
             type: String,
             required: true,

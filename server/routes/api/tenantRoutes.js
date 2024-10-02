@@ -1,5 +1,5 @@
-const router = express.Router();
-const { Tenant } = require('../../models/Tenant')
+const router = require('express').Router();
+const { Tenant } = require('../../models')
 
 //get all tenants
 router.get('/', async (req,res) => {
@@ -62,4 +62,6 @@ router.delete('/:id', async (req,res) => {
         console.log(error);
         return res.status(500).json(error);
     }
-})
+});
+
+module.exports = router;
