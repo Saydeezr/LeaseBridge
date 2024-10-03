@@ -1,5 +1,5 @@
 .navbar {
-    background: #747bff;
+    background: #46876d;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@
     }
   
     .nav-menu.active {
-      background: #312f41;
+      background: #2f413a;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
