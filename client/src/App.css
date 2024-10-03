@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home,
+.landlords,
+.tenants,
+.features,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  font-size: 100px;
+}
+
+.landlords {
+  color: #fff;
+  font-size: 100px;
+}
+
+.tenants {
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  color: #fff;
+  font-size: 100px;
+}
