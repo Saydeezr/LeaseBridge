@@ -54,7 +54,8 @@ export default function Nav() {
                             <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>Login</Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button buttonSize='btn--large'>SIGNUP</Button>}
+                    {button && <Button buttonStyle='btn--outline' buttonSize='btn--large'>LOGIN</Button>}
                 </div>
             </nav>
         </>

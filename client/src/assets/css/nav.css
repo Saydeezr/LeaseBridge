@@ -155,3 +155,8 @@
       transition: 250ms;
     }
   }
+
+.nav-btns{
+    margin: 5px;
+    background-color: red;
+  }
