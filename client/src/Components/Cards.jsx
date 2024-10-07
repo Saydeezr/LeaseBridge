@@ -1,18 +1,15 @@
 import { Link } from 'react-router-dom'
-import EachCard from './eachCard'
+import { Card } from 'react-bootstrap'
 
-export default function Card() {
+export default function Cards() {
     return(
-         <div className='cards'>
-           <h1>Want to Learn More</h1>
-           <div className="cards-container">
-            <div className="cards-wrapper">
-                <ul className="cards-items">
-                    <EachCard >
-                    </EachCard>
-                </ul>
-            </div>
-           </div>
-         </div>
+        <Card>
+        <Card.Img variant="top" src="images/keys.jpg" />
+        <Card.Body>
+          <Card.Text>
+            Landlords, start managing all aspects for your tenant and their monthly fees
+          </Card.Text>
+        </Card.Body>
+      </Card>
     )
 }

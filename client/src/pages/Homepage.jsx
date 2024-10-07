@@ -1,12 +1,12 @@
 import '../App.css'
 import HeroSection from '../Components/HeroSection'
-import Cards from '../Components/Cards';
+import Footer from '../Components/Footer'
 
 export default function Homepage() {
     return(
         <>
          <HeroSection />
-         < Cards />
+         <Footer />
         </>
     )
 }
